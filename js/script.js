@@ -1,11 +1,21 @@
 "use strict";
 
-let incr = 10,
-    decr = 10;
+const numberOfFilms = prompt('Skolko filmov?', '');
 
-++incr;
---decr;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-console.log(incr);
-console.log(decr);
-console.log(5%2);
+const a = prompt('odin iz filmov', ''),
+    b = prompt('oceni ego', ''),
+    c = prompt('odin iz filmov', ''),
+    d = prompt('oceni ego', '');
+
+personalMovieDB.movies[a]=b;
+personalMovieDB.movies[c]=d;
+
+console.log(personalMovieDB);
